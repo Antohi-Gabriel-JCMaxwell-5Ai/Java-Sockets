@@ -10,9 +10,11 @@
  */
 import java.net.*;
 import java.io.*;
+import java.util.Vector;
 
 public class ServerTestoMultiThreaded {
-
+    public static Vector<String> nicks = new Vector<String>();
+    
     public static void main(String[] args) {
 
         if (args.length != 1) {
@@ -21,8 +23,6 @@ public class ServerTestoMultiThreaded {
         }
 
         int portNumber = Integer.parseInt(args[0]);
-
-
         try{
             ServerSocket server = new ServerSocket(portNumber);
             System.out.println("Server di Testo in esecuzione...  (CTRL-C quits)\n");
@@ -38,6 +38,7 @@ public class ServerTestoMultiThreaded {
                     System.out.println("Connessione NON riuscita con client: ");
                     System.exit(-1);
                 }
+                
             }
         } catch (IOException e) {
             System.out.println("Error! Porta: " + portNumber + " non disponibile");
@@ -47,3 +48,4 @@ public class ServerTestoMultiThreaded {
         
     }
 }
+
