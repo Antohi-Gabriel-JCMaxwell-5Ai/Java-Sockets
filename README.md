@@ -9,7 +9,7 @@ Creazione di un programma Client-Server.
 
 ### Uso/Utilizzo
 
-Questo programma ha lo scopo di creare un'interazione tra più utenti su macchine differenti o eventualmente, sullo stesso pc attraverso prompt diversi. 
+Questo programma ha lo scopo di creare un'interazione testuale (online chat) tra più utenti su macchine differenti o eventualmente, sullo stesso pc attraverso prompt diversi. 
 
 ### Installazione
 
@@ -18,14 +18,13 @@ Sviluppo delle classi in NetBeans. Utilizzando cmd si devono creare i file “.c
 * per il Server
  - cd Documents\NetBeansProjects\Java-Sockets-Server\src
  - java ServerTestoMultiThreaded 1234
-* per il Client 
+* per il Client
  - cd Document\NetBeansProjects\Java-Sockets-Client\src
  - java client-Testo localhost 1234 
 
-
 ## Collaboratori
  
-Antohi, Mari, Gioannini
+Antohi, Gioannini, Mari 
 
 ## Licenza
 
