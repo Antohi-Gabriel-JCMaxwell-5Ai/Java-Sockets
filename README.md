@@ -32,6 +32,4 @@ Antohi, Mari, Gioannini
 
 Open source
 
-## Ringraziamenti
 
-Al prof. Palitto che ha condiviso il codice base con la classe
