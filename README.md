@@ -1,4 +1,4 @@
-
+test documetazione 
 # Java-Sockets
 
 Creazione di un programma Client-Server che permette di  avere una comunicazione fra utenti di diverse macchine. Inoltre  permette anche di interagire fra Client creati sullo stesso pc.
@@ -22,6 +22,4 @@ Antohi, Mari, Gioannini
 
 Open source
 
-## Ringraziamenti
 
-Al prof. Palitto che ha condiviso il codice base con la classe
