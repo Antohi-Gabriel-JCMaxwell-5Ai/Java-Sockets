@@ -23,6 +23,7 @@ Sviluppo delle classi in NetBeans. Utilizzando cmd si devono creare i file “.c
  - cd Document\NetBeansProjects\Java-Sockets-Client\src
  - java client-Testo localhost 1234 
 
+
 ## Collaboratori
  
 Antohi, Mari, Gioannini
