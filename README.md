@@ -1,3 +1,4 @@
+
 # Java-Sockets
 
 Creazione di un programma Client-Server.
@@ -30,6 +31,4 @@ Antohi, Mari, Gioannini
 
 Open source
 
-## Ringraziamenti
 
-Al prof. Palitto che ha condiviso il codice base con la classe
