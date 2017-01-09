@@ -1,18 +1,27 @@
-test documetazione 
+
 # Java-Sockets
 
-Creazione di un programma Client-Server che permette di  avere una comunicazione fra utenti di diverse macchine. Inoltre  permette anche di interagire fra Client creati sullo stesso pc.
-
+Creazione di un programma Client-Server.
 
 ### Prerequisiti
 
-* NetBeans (Java)
+* Java SDK 
 * CMD
 
+### Uso/Utilizzo
+
+Questo programma ha lo scopo di creare un'interazione tra più utenti su macchine differenti o eventualmente, sullo stesso pc attraverso prompt diversi. 
 
 ### Installazione
 
-Sviluppo delle classi in NetBeans.Utilizzando cmd si devono creare i file “.class” necessarie per il progetto.In seguito si  inseriscono le righe di comando per  l’avvio della comunicazione Client-Server.
+Sviluppo delle classi in NetBeans. Utilizzando cmd si devono creare i file “.class” necessarie per il progetto. In seguito si inseriscono sul prompt le seguenti righe di comando per l’avvio della comunicazione:
+
+* per il Server
+ - cd Documents\NetBeansProjects\Java-Sockets-Server\src
+ - java ServerTestoMultiThreaded 1234
+* per il Client 
+ - cd Document\NetBeansProjects\Java-Sockets-Client\src
+ - java client-Testo localhost 1234 
 
 ## Collaboratori
  
