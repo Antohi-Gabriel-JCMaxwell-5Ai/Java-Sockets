@@ -12,11 +12,8 @@ import java.net.*;
 import java.io.*;
 
 public class ClientTesto {
-    
-    /**
-     * @param args the command line arguments
-     */
-    
+    //VECTOR PER LE CHAT
+    	public static Vector<String> NomeChat = new Vector<String>();
     
     public static void main(String[] args) {
 	// verifica correttezza dei parametri
@@ -33,6 +30,43 @@ public class ClientTesto {
             { System.out.println("I/O Error");
                                  System.exit(-1); }
 	  
+	  //CODICE PER AGGIUNGERE UN UTENTE AD UNA CHAT
+	  try{
+	  System.out.println("Usa il commando <addChat> per entrare nella chat";
+	  NomeChat=(new BufferedReader(new InputStreamReader(System.in))).readLine();
+	  }
+	  catch (IOException e){
+	  System.out.println("Errore connessione sulla chat");
+	  System.exit(-1);}
+	  
+	  
+	  	 //CODICE CHE LEGGE IL COMMANDO addChat
+	  
+	   String line = "";
+            int clientPort = NomeChat.getPort(); //il "nome" del mittente (client)
+            nickname = in.readLine();
+            ServerTestoMultiThreaded.nicks.add(nickname).NomeChat;
+            while(line != null){
+                try{
+                    line = in.readLine();
+                    if(line.equals("addChat")){
+                        for(int i = 0; i < ServerTestoMultiThreaded.NomeChat.size(); i++){
+                            System.out.println((String) ServerTestoMultiThreaded.NomeChat.get(i));
+                           
+                        }
+                    }
+                    else{   
+                        //Manda lo stesso messaggio appena ricevuto con in aggiunta il "nome" del client
+                        out.println(nickname + ">> " + line);
+                        //scrivi messaggio ricevuto su terminale
+                        System.out.println(nickname + ">> " + line);
+                    }
+                } catch (IOException e) {
+                    System.out.println("lettura da socket fallito");
+                    System.exit(-1);
+                }
+	  
+	  //Finisce codice addChat
 	String hostName = args[0];
 	int portNumber = Integer.parseInt(args[1]);
 	try {
